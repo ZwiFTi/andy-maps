@@ -15,37 +15,44 @@ class App extends Component {
                 {
                     lat: 58.971355,
                     long: 5.731016,
-                    name: 'Skagen Bageri AS'
+                    name: 'Sjøhuset Skagen',
+                    source: 'https://foursquare.com/v/sj%C3%B8huset-skagen/4c433ea6d7fad13a64410ada'
                 },
                 {
                     lat: 58.970965,
                     long: 5.731965,
                     name: 'Døgnvill Burger Stavanger',
+                    source: 'https://foursquare.com/v/d%C3%B8gnvill-burger-stavanger/52d679b111d25266c4e5516a'
                 },
                 {
                     lat: 58.971192,
                     long: 5.731273,
-                    name: 'Chevy\'s Rockbar'
+                    name: 'Chevy\'s Rockbar',
+                    source: 'https://foursquare.com/v/chevys-rockbar/4f431cd6e3ffb9465ded8493'
                 },
                 {
                     lat: 58.971813,
                     long: 5.737259,
-                    name: 'Deja Vu Delikatesse AS'
+                    name: 'Deja Vu Delikatesse AS',
+                    source: 'https://foursquare.com/v/d%C3%A9j%C3%A0-vu-delikatesser/4c2f2767452620a1ccfd1c0f'
                 },
                 {
                     lat: 58.971797,
                     long: 5.733449,
-                    name: 'Re-naa'
+                    name: 'Re-naa',
+                    source: 'https://foursquare.com/v/renaa/5839d87d04aa4f696b344e6d'
                 },
                 {
                     lat: 58.973657,
                     long: 5.730911,
-                    name: 'India Tandoori Restaurant'
+                    name: 'India Tandoori Restaurant',
+                    source: 'https://foursquare.com/v/india-tandoori-restaurant-as/53f9a3a9498eacc7b118af93'
                 },
                 {
                     lat: 58.970190,
                     long: 5.736564,
-                    name: 'Thai Nong Khai AS'
+                    name: 'Thai Nong Khai AS',
+                    source: 'https://foursquare.com/v/thai-nong-khai/54f9a122498e902e45d310da'
                 }
             ],
             virtualMarkers: []
@@ -85,7 +92,8 @@ class App extends Component {
             let mark = new window.google.maps.Marker({
                 position: loc,
                 map: map,
-                title: marker.name
+                title: marker.name,
+                source: marker.source
             });
 
 
@@ -149,6 +157,7 @@ class App extends Component {
                             phone +
                             twitter +
                             "<p><b>Address:</b> " + place.location.address + ", " + place.location.city + "</p>" +
+                            "<p><b>Source:</b> " + self.marker.source + "</p>" +
                         "</div>";
                     self.setContent(info);
                 });

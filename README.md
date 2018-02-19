@@ -10,7 +10,7 @@
 
 ## Description
 
-A react application which uses google maps and foursquare api to display certain restaurant locations in Stavanger. The application can filter the restaurants with a search function.
+A react application which uses [google maps](https://developers.google.com/maps/) and [foursquare api](https://developer.foursquare.com/) to display certain restaurant locations in Stavanger. The application can filter the restaurants with a search function.
 
 ## Installation
 
