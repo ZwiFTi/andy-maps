@@ -176,10 +176,7 @@ class App extends Component {
         return (
             <div>
                 <header>
-                    <Sidebar
-                        infoWindow={this.state.info}
-                        openInfo={this.openMarker}
-                        virtualMarker={this.state.virtualMarkers}></Sidebar>
+
 
                     
                     <h1 id="title">Eating in Stavanger</h1>
