@@ -174,12 +174,6 @@ class App extends Component {
 
     render() {
         return (
-            <div>
-                <header>
-                    <h1 id="title">Eating Stavanger</h1>
-                </header>
-                <Map markers={this.state.markers}></Map>
-            </div>
         );
     }
 }
