@@ -176,10 +176,7 @@ class App extends Component {
         return (
             <div>
                 <header>
-
-
-                    
-                    <h1 id="title">Eating in Stavanger</h1>
+                    <h1 id="title">Eating Stavanger</h1>
                 </header>
                 <Map markers={this.state.markers}></Map>
             </div>
