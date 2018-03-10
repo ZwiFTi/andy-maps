@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import './App.css';
-import Map from './Components/Map'
+import Map from './Components/Map';
 import Sidebar from "./Components/Sidebar";
 
 class App extends Component {
@@ -87,7 +87,7 @@ class App extends Component {
         let self = this;
 
         this.state.markers.forEach(marker => {
-            const loc = {lat: marker.lat, lng: marker.long}
+            const loc = {lat: marker.lat, lng: marker.long};
 
             let mark = new window.google.maps.Marker({
                 position: loc,
@@ -179,10 +179,9 @@ class App extends Component {
                     <Sidebar
                         infoWindow={this.state.info}
                         openInfo={this.openMarker}
-                        virtualMarker={this.state.virtualMarkers}
-                    >
+                        virtualMarker={this.state.virtualMarkers}></Sidebar>
 
-                    </Sidebar>
+                    
                     <h1 id="title">Eating in Stavanger</h1>
                 </header>
                 <Map markers={this.state.markers}></Map>
